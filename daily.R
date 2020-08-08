@@ -10,11 +10,11 @@ library(emo)
 
 lapply(list.files("./R", full.names = TRUE), source)
 
-continuous_colors <- readRDS("~/Desktop/paletteerbot/data/continuous_colors.rds")
-discrete_colors <- readRDS("~/Desktop/paletteerbot/data/discrete_colors.rds")
-pokemon_colors <- readRDS("~/Desktop/paletteerbot/data/pokemon_colors.rds")
-schedule <- readRDS("~/Desktop/paletteerbot/data/schedule.rds")
-usa_plot <- readRDS("~/Desktop/paletteerbot/data/usa_plot.rds")
+continuous_colors <- readRDS("data/continuous_colors.rds")
+discrete_colors <- readRDS("data/discrete_colors.rds")
+pokemon_colors <- readRDS("data/pokemon_colors.rds")
+schedule <- readRDS("data/schedule.rds")
+usa_plot <- readRDS("data/usa_plot.rds")
 
 Today <- today() + 12
 
