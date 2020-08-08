@@ -1,0 +1,24 @@
+name: Daily Palette
+'on':
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: r-lib/actions/setup-r@v1
+      - name: Install Package Dependencies
+        run: |-
+          Rscript -e "install.packages('remotes')"
+          Rscript -e "remotes::install_deps(dependencies = TRUE)"
+      - name: Run Daily script
+        env:
+          PALBOT_ACCESS_SECRET: ${{ secrets.PALBOT_ACCESS_SECRET }}
+          PALBOT_ACCESS_TOKEN: ${{ secrets.PALBOT_ACCESS_TOKEN }}
+          PALBOT_CONSUMER_KEY: ${{ secrets.PALBOT_CONSUMER_KEY }}
+          PALBOT_CONSUMER_SECRET: ${{ secrets.PALBOT_CONSUMER_SECRET }}
+        run: |-
+          Rscript -e "source('daily.R')"

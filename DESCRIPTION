@@ -1,0 +1,26 @@
+Package: paletteerbot
+Title: Deploy the paletteerbot
+Version: 0.0.1
+Authors@R:
+    person(given = "Emil",
+           family = "Hvitfeldt",
+           role = c("aut", "cre"),
+           email = "emilhhvitfeldt@gmail.com",
+           comment = c(ORCID = "0000-0002-0679-1945"))
+Description: Deploy the paletteerbot Twitter bot
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Imports:
+    paletteer,
+    tidyverse,
+    lubridate,
+    patchwork,
+    tidygraph,
+    ggraph,
+    rtweet,
+    glue,
+    emo
+URL: https://github.com/EmilHvitfeldt/paletteerbot
+BugReports: https://github.com/EmilHvitfeldt/paletteerbot/issues

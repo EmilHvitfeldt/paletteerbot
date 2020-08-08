@@ -52,5 +52,5 @@ plot_continuous <- function(pal) {
   (bar_chart + usa_chart + scatter_chart) /
     (stacked_chart + hex_chart  + network_chart) +
     plot_annotation(title = paste0('"', pal$palette, '" palette from {', pal$package, "}"),
-                    caption = "@paletteerBot", theme = theme(plot.title = element_text(hjust = 0.5)))
+                    caption = "@BotPaletteer", theme = theme(plot.title = element_text(hjust = 0.5)))
 }

@@ -60,5 +60,5 @@ plot_discrete <- function(pal) {
   (bar_chart + boxplot_chart + scatter_chart) /
     (line_chart + stacked_chart + network_chart) +
     plot_annotation(title = paste0('"', pal$palette, '" palette from {', pal$package, "}"),
-                    caption = "@paletteerBot", theme = theme(plot.title = element_text(hjust = 0.5)))
+                    caption = "@BotPaletteer", theme = theme(plot.title = element_text(hjust = 0.5)))
 }
