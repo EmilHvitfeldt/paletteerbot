@@ -16,7 +16,7 @@ pokemon_colors <- readRDS("data/pokemon_colors.rds")
 schedule <- readRDS("data/schedule.rds")
 usa_plot <- readRDS("data/usa_plot.rds")
 
-Today <- today() + 12
+Today <- today()
 
 Today_palette <- schedule %>%
   filter(date == Today)
