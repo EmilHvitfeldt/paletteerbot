@@ -48,4 +48,4 @@ paletteer_token <- function() {
   )
 }
 
-post_tweet(daily_tweet(Today_palette), media = "chart.png", token = paletteer_token)
+post_tweet(daily_tweet(Today_palette), media = "chart.png", token = paletteer_token())
