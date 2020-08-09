@@ -1,7 +1,7 @@
 name: Daily Palette
 'on':
   schedule:
-    - cron:  '0 13 * * *'
+    - cron:  '0 19 * * *'
 
 jobs:
   build:
