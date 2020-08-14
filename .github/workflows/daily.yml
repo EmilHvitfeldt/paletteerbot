@@ -2,6 +2,9 @@ name: Daily Palette
 'on':
   schedule:
     - cron:  '0 19 * * *'
+  push:
+    branches:
+      - master
 
 jobs:
   build:
