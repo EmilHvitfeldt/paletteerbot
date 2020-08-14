@@ -21,7 +21,8 @@ Imports:
     ggraph,
     rtweet,
     glue,
-    emo
+    emo,
+    pals
 URL: https://github.com/EmilHvitfeldt/paletteerbot
 BugReports: https://github.com/EmilHvitfeldt/paletteerbot/issues
 Remotes:
