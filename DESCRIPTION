@@ -22,7 +22,8 @@ Imports:
     rtweet,
     glue,
     emo,
-    pals
+    pals,
+    harrypotter
 URL: https://github.com/EmilHvitfeldt/paletteerbot
 BugReports: https://github.com/EmilHvitfeldt/paletteerbot/issues
 Remotes:
