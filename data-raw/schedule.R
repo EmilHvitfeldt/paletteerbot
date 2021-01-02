@@ -49,7 +49,8 @@ schedule_split$pokemon <- pokemon_colors %>%
 schedule <- bind_rows(schedule_split) %>%
   arrange(date)
 
-write_rds(schedule, "data/2019_schedule.rds")
+
+write_rds(schedule, "data/schedule.rds")
 write_rds(pokemon_colors, "data/pokemon_colors.rds")
 write_rds(discrete_colors, "data/discrete_colors.rds")
 write_rds(continuous_colors, "data/continuous_colors.rds")
