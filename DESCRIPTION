@@ -27,4 +27,5 @@ Imports:
 URL: https://github.com/EmilHvitfeldt/paletteerbot
 BugReports: https://github.com/EmilHvitfeldt/paletteerbot/issues
 Remotes:
-    hadley/emo
+    hadley/emo,
+    EmilHvitfeldt/paletteer
